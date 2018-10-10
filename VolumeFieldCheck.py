@@ -44,7 +44,7 @@ rows = cursor.fetchall()
 conn.close()
 
 convert = str(rows)
-data = convert.replace("',), ('", "\r\n").replace("[('", "").replace("',)]","") #Create linebreaks so the
+data = convert.replace("',), ('", "\r\n").replace("[('", "").replace("',)]","") #Create linebreaks between results in email
 
 # These are variables for the email that will be sent.
 # This code uses placeholders, please add your own email server info
